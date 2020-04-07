@@ -9,6 +9,9 @@
 
 运行：
 
+下载数据：
+[0.csv](https://drive.google.com/file/d/147SKWiyU6UZ4GN7AH4VW8hUMgKdI-O5K/view?usp=sharing), [1.csv](https://drive.google.com/file/d/1NT_XRF_SG00qNcUejWlA6S0bTHbW-Ieg/view?usp=sharing)
+
 下载repo，运行：
 ```
 python3 Fast_naive_bayes.py
