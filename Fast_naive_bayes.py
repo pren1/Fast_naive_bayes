@@ -52,8 +52,9 @@ def predict_message(real_total_dict, fake_total_dict, prior_of_real, prior_of_fa
 	real_prob = prob_calculation(prior_of_real, real_total_dict, real_lowest_prob, message)
 	fake_prob = prob_calculation(prior_of_fake, fake_total_dict, fake_lowest_prob, message)
 	'then, we normalize these probabilities'
-	real_prob /= real_prob + fake_prob
-	fake_prob /= real_prob + fake_prob
+	total_prob = real_prob + fake_prob
+	real_prob /= total_prob
+	fake_prob /= total_prob
 	return real_prob, fake_prob
 
 real_df = pd.read_csv('1.csv')
